@@ -21,7 +21,7 @@ public class PaginaApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("https://portfolioapp-9415a.web.app");
+                registry.addMapping("/**").allowedOrigins("https://portfolio-app-5455c.web.app");
             }
         };
     }
@@ -30,7 +30,7 @@ public class PaginaApplication {
     public CorsFilter corsFilter() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         corsConfiguration.setAllowCredentials(true);
-        corsConfiguration.setAllowedOrigins(Arrays.asList("https://portfolioapp-9415a.web.app"));
+        corsConfiguration.setAllowedOrigins(Arrays.asList("https://portfolio-app-5455c.web.app"));
         corsConfiguration.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin", "Content-Type",
                 "Accept", "Authorization", "Origin, Accept", "X-Requested-With",
                 "Access-Control-Request-Method", "Access-Control-Request-Headers"));
